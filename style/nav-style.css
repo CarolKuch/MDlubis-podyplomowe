@@ -11,13 +11,16 @@ body{
 
 .navbar{
     background-color: black;
-    height: 80px;
+    height: 65px;
 }
 
-.nav1 a{
+.nav1-left a{
     color:#e6e6e8;
     text-decoration: none;
-    font-weight: bold;
+}
+
+.nav1-right a{
+    font-size: 14px;
 }
 
 a:hover{
@@ -60,6 +63,7 @@ a:hover{
 
 .projekt{
     font-size: 20px;
+    font-weight: bold;
 }
 
 .marcin, .follow, .projekt{
@@ -67,53 +71,49 @@ a:hover{
 }
 
 .marcin{
-    font-size: 14px;
-    font-weight: normal;
+    font-size: 12px;
 }
 
 .follow{
-   font-size: 12px;
+   font-size: 10px;
    background-color: #5a6074;
    border-radius: 10%;
    padding: 1px 6px;
 }
 
 .heart{
-    display: inline-block;
-    width: 54px;
-    height: 54px;
-    margin-right: 10px;
-    border: 1px solid gray;
+    border: 3px solid #adafbc;
     border-radius: 10px;
-    padding: 14px;
+    padding: 10px 10px;
+    margin: 3px;
 }
 
-.codepen:hover, .eye:hover{
-    opacity: 1.0;
+.heart-img{
+    height: 60px;
+    padding: 20px 5px;
+    align-self: baseline;
 }
 
 .heart:hover{
-    opacity: 0.8;
-    background-color: cornsilk;
+    background-color: #5a6074;
 }
 
 .eye{
-    border: 2px solid #444857;
     border-radius: 10px;
-    padding: 11px 25px;
     display: inline-block;
+    padding: 10px 20px;
+    margin: 3px;
 }
 
 .eye-img{
-    width: 50px;
+    width: 25px;
     margin-right: 5px;
 }
 
 .log-in, .sign-up{
-    margin: 5px;
+    margin: 3px;
     border-radius: 10px;
     padding: 15px 25px;
     display: inline-block;
+    padding: 10px 20px;
 }
-
-
