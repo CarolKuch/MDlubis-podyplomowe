@@ -1,0 +1,16 @@
+.tech{
+    margin-top: 80px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    height: 100%;
+}
+
+.tech-img{
+    height: 200px;
+}
+
+.tech-row{
+    margin-left: auto;
+    margin-right: auto;
+}

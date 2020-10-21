@@ -55,7 +55,7 @@ h6{
     color: #777777;
     border-bottom: 2px solid darkred;
 }
-.content{
+.lorem{
     margin-top: 80px;
     width: 60vw;
     margin-left: auto;
@@ -63,8 +63,8 @@ h6{
 }
 
 .about{
-    margin-bottom: 30px;
     font-size: 24px;
+    margin-top: 8%;
     text-align: center;
     position: relative;
 }
