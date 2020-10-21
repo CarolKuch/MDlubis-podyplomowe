@@ -17,9 +17,9 @@
     height: 650px;
 }
 
-.container{
-    margin-left: 25%;   
-    width: 50%;
+.form-container{
+    margin-left: auto;  
+    width: 70%;
     height: 30px;
     font-weight: bold;
 }
@@ -62,4 +62,19 @@ textarea{
 
 .wyslij:hover{
     border: 1px solid red;
+}
+
+@media (max-width: 1200px)
+{
+    .form-container
+    {
+        width: 90%;
+    }
+}
+
+@media (max-width: 900px)
+{
+   .formu{
+    margin: 8% 5% 2% 5%;
+   }
 }

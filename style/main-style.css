@@ -1,7 +1,5 @@
 .main-img{
-    width: 95%;
     object-fit: contain;
-    height: 80vh;
     position: relative;
 }
 
@@ -81,4 +79,16 @@ h6{
     left: calc(50% - 36px);
     bottom: -10px;
     background: red;
+}
+
+.main-img{
+    width: 95%;
+    margin-top: 5%;
+}
+
+@media (max-width: 550px)
+{
+    .nav2{
+        display: none;
+    }
 }
