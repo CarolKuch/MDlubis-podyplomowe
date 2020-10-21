@@ -2,15 +2,23 @@
     margin-top: 80px;
     margin-right: auto;
     margin-left: auto;
-    width: 90%;
+    width: 100%;
     height: 100%;
-}
-
-.tech-img{
-    height: 200px;
 }
 
 .tech-row{
     margin-left: auto;
     margin-right: auto;
+}
+
+.tech-img:hover{
+    filter: brightness(40%);
+    transition: 1s ease-in-out;
+}
+
+.video-frame{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
