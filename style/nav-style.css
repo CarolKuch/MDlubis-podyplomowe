@@ -1,0 +1,119 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    background-color: black;
+    height: 80px;
+}
+
+.nav1 a{
+    color:#e6e6e8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover{
+    text-decoration: none;
+    opacity: 1.0;
+    color:#e6e6e8;
+    transition: 0.1s ease;
+}
+
+.follow:hover, .sign-up{
+    background-color:#47cf73;
+}
+
+.marcin:hover, .projekt, .follow, .log-in, .eye{
+    color: white;
+}
+
+.log-in, .eye{   
+    background-color: #444857;
+    opacity: 0.8;
+}
+
+.sign-up{
+    color: black;
+}
+
+.sign-up:hover{
+    background-color: darkgreen;
+    color: black;
+}
+
+.codepen{
+    width: 45px;
+    height: 45px;
+    color:#444857;
+    display: block;
+    float: left;
+    padding: 6px;
+}
+
+.projekt{
+    font-size: 20px;
+}
+
+.marcin, .follow, .projekt{
+    display: inline-block;
+}
+
+.marcin{
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.follow{
+   font-size: 12px;
+   background-color: #5a6074;
+   border-radius: 10%;
+   padding: 1px 6px;
+}
+
+.heart{
+    display: inline-block;
+    width: 54px;
+    height: 54px;
+    margin-right: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 14px;
+}
+
+.codepen:hover, .eye:hover{
+    opacity: 1.0;
+}
+
+.heart:hover{
+    opacity: 0.8;
+    background-color: cornsilk;
+}
+
+.eye{
+    border: 2px solid #444857;
+    border-radius: 10px;
+    padding: 11px 25px;
+    display: inline-block;
+}
+
+.eye-img{
+    width: 50px;
+    margin-right: 5px;
+}
+
+.log-in, .sign-up{
+    margin: 5px;
+    border-radius: 10px;
+    padding: 15px 25px;
+    display: inline-block;
+}
+
+
