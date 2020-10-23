@@ -1,119 +1,184 @@
-*{
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-body{
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.navbar{
-    background-color: black;
-    height: 68px;
+.navbar {
+  background-color: black;
+  height: 68px;
 }
 
-.nav1-left a{
-    color:#e6e6e8;
-    text-decoration: none;
+.nav1-left a {
+  color: #e6e6e8;
+  text-decoration: none;
 }
 
-.nav1-right a{
-    font-size: 14px;
+.nav1-right a {
+  font-size: 1rem;
+  padding: 0.7rem 1rem;
 }
 
-a:hover{
-    text-decoration: none;
-    opacity: 1.0;
-    color:#e6e6e8;
-    transition: 0.1s ease;
+a:hover {
+  text-decoration: none;
+  opacity: 1;
+  color: #e6e6e8;
+  transition: 0.1s ease;
 }
 
-.follow:hover, .sign-up{
-    background-color:#47cf73;
+.follow:hover,
+.sign-up {
+  background-color: #47cf73;
 }
 
-.marcin:hover, .projekt, .follow, .log-in, .eye{
-    color: white;
+.marcin:hover,
+.projekt,
+.follow,
+.log-in,
+.eye {
+  color: white;
 }
 
-.log-in, .eye{   
-    background-color: #444857;
-    opacity: 0.8;
+.log-in,
+.eye {
+  background-color: #444857;
+  opacity: 0.8;
 }
 
-.sign-up{
-    color: black;
+.sign-up {
+  color: black;
 }
 
-.sign-up:hover{
-    background-color: darkgreen;
-    color: black;
+.sign-up:hover {
+  background-color: darkgreen;
+  color: black;
 }
 
-.codepen{
-    width: 45px;
-    height: 45px;
-    color:#444857;
-    display: block;
-    float: left;
-    padding: 6px;
+.codepen {
+  width: 45px;
+  height: 45px;
+  color: #444857;
+  display: block;
+  float: left;
+  padding: 6px;
 }
 
-.projekt{
-    font-size: 20px;
-    font-weight: bold;
+.projekt {
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
-.marcin, .follow, .projekt{
-    display: inline-block;
+.marcin,
+.follow,
+.projekt {
+  display: inline-block;
 }
 
-.marcin{
-    font-size: 12px;
+.marcin {
+  font-size: 0.8rem;
 }
 
-.follow{
-   font-size: 10px;
-   background-color: #5a6074;
-   border-radius: 10%;
-   padding: 1px 6px;
+.follow {
+  font-size: 0.7rem;
+  background-color: #5a6074;
+  border-radius: 10%;
+  padding: 1px 6px;
 }
 
-.heart{
-    border: 3px solid #adafbc;
-    border-radius: 10px;
-    padding: 10px 10px;
-    margin: 3px;
+.heart {
+  border-radius: 10px;
+  display: inline-block;
+  font-weight: bold;
+  height: 47px;
+  background-color: black;
+  border: 2px solid #5a6074;
 }
 
-.heart-img{
+.heart-img {
+  width: 25px;
+}
+
+.heart:hover {
+  background-color: #5a6074;
+}
+
+.eye {
+  border-radius: 10px;
+  display: inline-block;
+  margin: 0.3rem;
+  font-weight: bold;
+}
+
+.eye-img {
+  width: 25px;
+  margin-right: 5px;
+}
+
+.log-in,
+.sign-up {
+  margin: 3px;
+  border-radius: 10px;
+  padding: 15px 25px;
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  .navbar {
     height: 60px;
-    padding: 20px 5px;
-    align-self: baseline;
+  }
+
+  .eye-text {
+    display: none;
+  }
+
+  .eye-img {
+    margin-right: 0px;
+  }
+
+  .nav1-left,
+  .nav1-right {
+    margin-top: -5px;
+  }
 }
 
-.heart:hover{
-    background-color: #5a6074;
+@media (max-width: 750px) {
+  .eye {
+    display: none;
+  }
 }
 
-.eye{
-    border-radius: 10px;
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 3px;
+@media (max-width: 600px) {
+  .heart {
+    display: none;
+  }
+
+  .marcin,
+  .nav1-right a {
+    font-size: 0.8rem;
+  }
+
+  .nav1-right a {
+    padding: 8px;
+  }
+
+  .projekt {
+    font-size: 1rem;
+  }
+
+  .follow {
+    font-size: 0.6rem;
+  }
 }
 
-.eye-img{
-    width: 25px;
-    margin-right: 5px;
-}
-
-.log-in, .sign-up{
-    margin: 3px;
-    border-radius: 10px;
-    padding: 15px 25px;
-    display: inline-block;
-    padding: 10px 20px;
+@media (max-width: 470px) {
+  .codepen {
+    display: none;
+  }
 }

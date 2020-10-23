@@ -1,151 +1,145 @@
-.main-img{
+.main-img {
+  object-fit: cover;
+  position: relative;
+  width: 95%;
+  margin-top: 5%;
+}
+
+.headers {
+  position: absolute;
+  color: white;
+  margin: auto;
+  top: 15rem;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+h6 {
+  line-height: 90px;
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.h1after:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 72px;
+  height: 3px;
+  left: -webkit-calc(50% - 36px);
+  left: calc(50% - 36px);
+  background: white;
+}
+
+.nav2 {
+  display: block;
+  float: right;
+  border-bottom: 2px solid darkred;
+  height: 50px;
+}
+
+.nav-item {
+  text-transform: uppercase;
+  position: relative;
+}
+
+.nav2 .nav-item:hover {
+  color: #d07c7c;
+  transition: 0.3s;
+  border-bottom: 2px solid darkred;
+}
+
+.menu {
+  height: 50px;
+  position: relative;
+  color: #686868;
+  padding-right: 90px;
+  color: #777777;
+  border-bottom: 2px solid darkred;
+}
+
+.lorem {
+  margin-top: 4vh;
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10vh;
+  text-align: center;
+}
+
+.about {
+  font-size: 24px;
+  margin-top: 5%;
+  text-align: center;
+  position: relative;
+}
+
+.about:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 72px;
+  height: 3px;
+  left: -webkit-calc(50% - 36px);
+  left: calc(50% - 36px);
+  bottom: -10px;
+  background: red;
+}
+
+.video-frame-content {
+  width: 90%;
+  height: 500px;
+}
+
+@media (max-width: 1000px) {
+  .main-img {
+    width: 100%;
+    margin-top: 0%;
+  }
+
+  .headers {
+    top: 10rem;
+  }
+
+  .headers h1 {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 810px) {
+  .headers {
+    top: 7rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .computer-studies {
+    height: 90vh;
+  }
+
+  .main-img {
+    height: 90vh;
     object-fit: cover;
-    position: relative;
-    width: 95%;
-    margin-top: 5%;
+  }
+
+  .headers {
+    top: 50%;
+  }
+  .video-frame-content {
+    height: 300px;
+  }
 }
 
-.headers{
-    position: absolute;
-    color: white;
-    margin: auto;
-    top: 15rem;
-    bottom: 0;
-    right: 0;
-    left: 0;
-}
-
-h6{
-    line-height: 90px;
-    font-size: 1rem;
-}
-
-h5{
-    font-size: 1.2rem;
-}
-
-h1{
-    font-size: 2rem;
-}
-
-.h1after:after{
-    content: '';
-    position: absolute;
-    display: block;
-    width: 72px;
-    height: 3px;
-    left: -webkit-calc(50% - 36px);
-    left: calc(50% - 36px);
-    background: white;
-}
-
-.nav2{
-    display: block;
-    float: right;
-    border-bottom: 2px solid darkred;
-    height: 50px;
-}
-
-.nav-item{
-    text-transform: uppercase;
-    position: relative;
-}
-
-.nav2 .nav-item:hover{
-    color: #D07C7C;
-    transition: .3s;
-    border-bottom: 2px solid darkred;
-}
-
-.menu{
-    height: 50px;
-    position: relative;
-    color: #686868;
-    padding-right: 90px;
-    color: #777777;
-    border-bottom: 2px solid darkred;
-}
-
-.lorem{
-    margin-top: 4%;
-    width: 60vw;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10vh;
-}
-
-.about{
-    font-size: 24px;
-    margin-top: 5%;
-    text-align: center;
-    position: relative;
-}
-
-.about:after{
-    content: '';
-    position: absolute;
-    display: block;
-    width: 72px;
-    height: 3px;
-    left: -webkit-calc(50% - 36px);
-    left: calc(50% - 36px);
-    bottom: -10px;
-    background: red;
-}
-
-.video-frame-content{
-    width: 90%;
-    height: 500px;
-}
-
-@media (max-width: 1000px)
-{
-    .main-img{
-        width: 100%;
-        margin-top: 0%;
-    }
-
-    .headers{
-        top: 10rem;
-    }
-
-    .headers h1{
-        margin-bottom: 0px;
-    }
-}
-
-@media (max-width: 810px)
-{
-    .headers{
-        top: 7rem;
-    }
-
-    
-}
-
-@media(max-width: 700px)
-{    
-    .computer-studies{
-        height: 90vh;   
-    }
-
-    .main-img{
-        height: 90vh;
-        object-fit: cover;
-    }
-    
-    .headers{
-        top:50%;
-
-    }
-    .video-frame-content{
-        height: 300px;        
-    }
-}
-
-@media (max-width: 550px)
-{
-    .video-frame-content{
-        height: 200px;        
-    }    
+@media (max-width: 550px) {
+  .video-frame-content {
+    height: 200px;
+  }
 }
