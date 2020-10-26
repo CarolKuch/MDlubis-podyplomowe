@@ -46,9 +46,10 @@ h1 {
   height: 50px;
 }
 
-.nav-item {
+.nav2 .nav-item {
   text-transform: uppercase;
   position: relative;
+  color: #777777;
 }
 
 .nav2 .nav-item:hover {
@@ -62,7 +63,6 @@ h1 {
   position: relative;
   color: #686868;
   padding-right: 90px;
-  color: #777777;
   border-bottom: 2px solid darkred;
 }
 
