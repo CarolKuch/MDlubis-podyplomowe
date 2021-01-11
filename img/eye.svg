@@ -2,29 +2,29 @@
   <g id="Group_23" data-name="Group 23" transform="translate(-8 -475)">
     <g id="Group_20" data-name="Group 20" transform="translate(-24 -25)">
       <g id="Group_19" data-name="Group 19" transform="translate(1 -1)">
-        <g id="Path_99" data-name="Path 99" transform="translate(31 501)" fill="none">
-          <path d="M0,0H46V23H0Z" stroke="none"/>
-          <path d="M 1 1 L 1 22 L 45 22 L 45 1 L 1 1 M 0 0 L 46 0 L 46 23 L 0 23 L 0 0 Z" stroke="none" fill="#5a6074"/>
+        <g id="Path_99" data-name="Path 99" transform="translate(31 501)">
+          <path id="Path_117" data-name="Path 117" d="M0,0H46V23H0Z" fill="none"/>
+          <path id="Path_118" data-name="Path 118" d="M1,1V22H45V1H1M0,0H46V23H0Z" fill="#adafbc"/>
         </g>
         <g id="Group_21" data-name="Group 21">
-          <g id="Rectangle_2" data-name="Rectangle 2" transform="translate(31 501)" fill="none" stroke="#5a6074" stroke-width="1">
+          <g id="Rectangle_2" data-name="Rectangle 2" transform="translate(31 501)" fill="none" stroke="#adafbc" stroke-width="1">
             <rect width="46" height="2" stroke="none"/>
             <rect x="0.5" y="0.5" width="45" height="1" fill="none"/>
           </g>
-          <g id="Rectangle_3" data-name="Rectangle 3" transform="translate(31 502)" fill="none" stroke="#5a6074" stroke-width="1">
+          <g id="Rectangle_3" data-name="Rectangle 3" transform="translate(31 502)" fill="none" stroke="#adafbc" stroke-width="1">
             <rect width="46" height="2" stroke="none"/>
             <rect x="0.5" y="0.5" width="45" height="1" fill="none"/>
           </g>
-          <g id="Rectangle_4" data-name="Rectangle 4" transform="translate(31 503)" fill="none" stroke="#5a6074" stroke-width="1">
+          <g id="Rectangle_4" data-name="Rectangle 4" transform="translate(31 503)" fill="none" stroke="#adafbc" stroke-width="1">
             <rect width="46" height="2" stroke="none"/>
             <rect x="0.5" y="0.5" width="45" height="1" fill="none"/>
           </g>
         </g>
       </g>
     </g>
-    <g id="Path_100" data-name="Path 100" transform="translate(19 482)" fill="none">
-      <path d="M12,0c6.627,0,12,2.686,12,6s-5.373,6-12,6S0,9.314,0,6,5.373,0,12,0Z" stroke="none"/>
-      <path d="M 12 3 C 9.291210174560547 3 6.687450408935547 3.525090217590332 4.856359481811523 4.440639972686768 C 3.322700500488281 5.207469940185547 3 5.896180152893066 3 6 C 3 6.103819847106934 3.322700500488281 6.792530059814453 4.856359481811523 7.559360027313232 C 6.687450408935547 8.474909782409668 9.291210174560547 9 12 9 C 14.70878982543945 9 17.31254959106445 8.474909782409668 19.14364051818848 7.559360027313232 C 20.67729949951172 6.792530059814453 21 6.103819847106934 21 6 C 21 5.896180152893066 20.67729949951172 5.207469940185547 19.14364051818848 4.440639972686768 C 17.31254959106445 3.525090217590332 14.70878982543945 3 12 3 M 12 0 C 18.62742042541504 0 24 2.68628978729248 24 6 C 24 9.31371021270752 18.62742042541504 12 12 12 C 5.372579574584961 12 0 9.31371021270752 0 6 C 0 2.68628978729248 5.372579574584961 0 12 0 Z" stroke="none" fill="#5a6074"/>
+    <g id="Path_100" data-name="Path 100" transform="translate(19 482)">
+      <path id="Path_119" data-name="Path 119" d="M12,0c6.627,0,12,2.686,12,6s-5.373,6-12,6S0,9.314,0,6,5.373,0,12,0Z" fill="none"/>
+      <path id="Path_120" data-name="Path 120" d="M12,3A16.651,16.651,0,0,0,4.856,4.441C3.323,5.207,3,5.9,3,6s.323.793,1.856,1.559A16.651,16.651,0,0,0,12,9a16.651,16.651,0,0,0,7.144-1.441C20.677,6.793,21,6.1,21,6s-.323-.793-1.856-1.559A16.651,16.651,0,0,0,12,3m0-3c6.627,0,12,2.686,12,6s-5.373,6-12,6S0,9.314,0,6,5.373,0,12,0Z" fill="#adafbc"/>
     </g>
   </g>
 </svg>

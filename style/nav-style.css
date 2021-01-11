@@ -26,7 +26,6 @@ body {
 
 a:hover {
   text-decoration: none;
-  opacity: 1;
   color: #e6e6e8;
   transition: 0.1s ease;
 }
@@ -129,7 +128,7 @@ a:hover {
   font-weight: bold;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   .navbar {
     height: 60px;
   }
