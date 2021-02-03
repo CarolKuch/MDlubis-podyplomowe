@@ -1,1 +1,1 @@
-import style from "./scss/index.scss"
+import style from "./scss/main.scss"
