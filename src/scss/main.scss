@@ -79,16 +79,13 @@ body {
 
 .lorem {
     margin-top: 4vh;
-    width: 60vw;
+    width: $width-70;
     margin: $margin-5vh-auto-10vh-auto;
     text-align: center;
 }
 
 .about {
-    font-size: 24px;
-    margin-top: 5%;
-    text-align: center;
-    position: relative;
+    @include h2-position-relative;
 }
 
 .video-frame-content {
@@ -202,10 +199,8 @@ a:hover {
 }
 
 .tech {
+    @include centered-item($width-100);
     margin-top: 80px;
-    margin-right: auto;
-    margin-left: auto;
-    width: $width-100;
     height: $width-100;
     .tech-img:hover {
         filter: brightness(40%);
@@ -222,7 +217,7 @@ a:hover {
 }
 
 .form-container {
-    width: 70%;
+    width: $width-70;
 }
 
 input {
@@ -238,9 +233,7 @@ textarea {
 }
 
 .form-container p {
-    font-size: 16px;
     text-align: left;
-    margin-left: $margin-large;
     width: $width-70;
 }
 

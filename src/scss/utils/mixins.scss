@@ -1,3 +1,9 @@
+@mixin h2-position-relative{
+    font-size: 24px;
+    margin-top: 5%;
+    text-align: center;
+    position: relative;
+}
 @mixin after-underline($after-underline-color){
 content: "";
 position: absolute;
