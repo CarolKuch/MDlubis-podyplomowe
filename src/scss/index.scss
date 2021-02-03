@@ -1,0 +1,416 @@
+@font-face {
+    font-family: Lato;
+    src: url("https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap");
+}
+
+.formular {
+    padding: 3%;
+    font-family: "Lato";
+    text-align: center;
+    background-image: url("../../assets/form-b.jpg");
+    opacity: 0.7;
+    color: white;
+    font-weight: bold;
+    margin: 8% 15% 2% 15%;
+    height: 650px;
+}
+
+.form-container {
+    width: 70%;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    border: 2px solid darkslateblue;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+textarea {
+    border: 2px solid darkslateblue;
+    width: 100%;
+    height: 200px;
+    font-size: 14px;
+}
+
+.send {
+    width: 100px;
+    text-align: center;
+    display: block;
+    float: right;
+    background-color: #228ce1;
+    border: 1px solid #324ead;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.form-container p {
+    font-size: 16px;
+    text-align: left;
+    margin-left: 20px;
+    width: 70%;
+}
+
+.send:hover {
+    background-color: #324ead;
+}
+
+@media (max-width: 1200px) {
+    .form-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 900px) {
+    .formu {
+        margin: 8% 5% 2% 5%;
+    }
+}
+.main-img {
+    position: relative;
+    width: 95%;
+    margin-top: 5%;
+}
+
+.headers {
+    position: absolute;
+    color: white;
+    top: 15rem;
+    right: 0;
+    left: 0;
+}
+
+h6 {
+    line-height: 90px;
+    font-size: 1rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.h1after:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 72px;
+    height: 3px;
+    left: -webkit-calc(50% - 36px);
+    left: calc(50% - 36px);
+    background: white;
+}
+
+.about:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 72px;
+    height: 3px;
+    left: -webkit-calc(50% - 36px);
+    left: calc(50% - 36px);
+    bottom: -10px;
+    background: red;
+}
+
+
+
+.nav2 .nav-item {
+    text-transform: uppercase;
+    color: #777777;
+}
+
+.nav2 .nav-item:hover {
+    color: #d07c7c;
+    transition: 0.3s;
+    border-bottom: 2px solid darkred;
+}
+
+.menu {
+    height: 68px;
+    position: relative;
+    padding-right: 90px;
+    border-bottom: 2px solid darkred;
+}
+
+.nav2 {
+    display: block;
+    float: right;
+    border-bottom: 2px solid darkred;
+    height: 50px;
+}
+
+.lorem {
+    margin-top: 4vh;
+    width: 60vw;
+    margin: 5vh auto 10vh auto;
+    text-align: center;
+}
+
+.about {
+    font-size: 24px;
+    margin-top: 5%;
+    text-align: center;
+    position: relative;
+}
+
+
+
+.video-frame-content {
+    width: 90%;
+    height: 500px;
+}
+
+@media (max-width: 1000px) {
+    .main-img {
+        width: 100%;
+        margin-top: 0%;
+    }
+
+    .headers {
+        top: 10rem;
+    }
+
+    .headers h1 {
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 810px) {
+    .headers {
+        top: 7rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .computer-studies {
+        height: 90vh;
+    }
+
+    .main-img {
+        height: 90vh;
+        object-fit: cover;
+    }
+
+    .headers {
+        top: 50%;
+    }
+    .video-frame-content {
+        height: 300px;
+    }
+}
+
+@media (max-width: 550px) {
+    .video-frame-content {
+        height: 200px;
+    }
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: black;
+    height: 68px;
+}
+
+.nav1-left a {
+    color: #e6e6e8;
+    text-decoration: none;
+}
+
+.nav1-right a {
+    font-size: 1rem;
+    padding: 0.7rem 1rem;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #e6e6e8;
+    transition: 0.1s ease;
+}
+
+.follow:hover,
+.sign-up {
+    background-color: #47cf73;
+}
+
+.marcin:hover,
+.projekt,
+.follow,
+.log-in,
+.eye {
+    color: white;
+}
+
+.log-in,
+.eye {
+    background-color: #444857;
+    opacity: 0.8;
+}
+
+.sign-up {
+    color: black;
+}
+
+.sign-up:hover {
+    background-color: #329445;
+}
+
+.codepen {
+    width: 45px;
+    height: 45px;
+    color: #444857;
+    display: block;
+    float: left;
+    padding: 6px;
+}
+
+.projekt {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.marcin,
+.follow,
+.projekt {
+    display: inline-block;
+}
+
+.marcin {
+    font-size: 0.8rem;
+}
+
+.follow {
+    font-size: 0.7rem;
+    background-color: #5a6074;
+    border-radius: 10%;
+    padding: 1px 6px;
+}
+
+.heart {
+    border-radius: 10px;
+    display: inline-block;
+    height: 47px;
+    background-color: black;
+    border: 2px solid #5a6074;
+}
+
+.heart-img {
+    width: 25px;
+}
+
+.heart:hover {
+    background-color: #5a6074;
+}
+
+.eye {
+    border-radius: 10px;
+    display: inline-block;
+    margin: 0.3rem;
+    font-weight: bold;
+}
+
+.eye-img {
+    width: 25px;
+    margin-right: 5px;
+}
+
+.log-in,
+.sign-up {
+    margin: 3px;
+    border-radius: 10px;
+    padding: 15px 25px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+@media (max-width: 850px) {
+    .navbar {
+        height: 60px;
+    }
+
+    .eye-text {
+        display: none;
+    }
+
+    .eye-img {
+        margin-right: 0px;
+    }
+
+    .nav1-left,
+    .nav1-right {
+        margin-top: -5px;
+    }
+}
+
+@media (max-width: 750px) {
+    .eye {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .heart {
+        display: none;
+    }
+
+    .marcin,
+    .nav1-right a {
+        font-size: 0.8rem;
+    }
+
+    .nav1-right a {
+        padding: 8px;
+    }
+
+    .projekt {
+        font-size: 1rem;
+    }
+
+    .follow {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 470px) {
+    .codepen {
+        display: none;
+    }
+}
+.tech {
+    margin-top: 80px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.tech-img:hover {
+    filter: brightness(40%);
+    transition: 1s ease-in-out;
+}
+
+.video-frame {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
