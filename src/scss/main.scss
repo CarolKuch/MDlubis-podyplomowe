@@ -3,8 +3,8 @@
 @import "./base/typography.scss";
 @import "./base/layout.scss";
 @font-face {
-    font-family: Lato;
-    src: url("https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap");
+    font-family: Roboto;
+    src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 }
 
 * {
@@ -16,8 +16,8 @@
 body {
     margin: $margin-0;
     padding: $margin-0;
+    font-family: "Roboto";
 }
-
 
 .main-img {
     position: relative;
@@ -31,53 +31,28 @@ body {
     top: 15rem;
     right: 0;
     left: 0;
-}
+    h6 {
+        line-height: 90px;
+        font-size: 1rem;
+    }
 
-h6 {
-    line-height: 90px;
-    font-size: 1rem;
-}
-
-h5 {
-    font-size: 1.2rem;
-}
-
-h1 {
-    font-size: 2rem;
+    h5 {
+        font-size: 1.2rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
 }
 
 .h1after:after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 72px;
-    height: 3px;
-    left: -webkit-calc(50% - 36px);
-    left: calc(50% - 36px);
-    background: $white-color;
+        @include after-underline ($white-color);
 }
 
 .about:after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 72px;
-    height: 3px;
-    left: -webkit-calc(50% - 36px);
-    left: calc(50% - 36px);
-    bottom: -10px;
-    background: $red-color;
+    @include after-underline ($red-color);
 }
 
-.nav2 .nav-item {
-    text-transform: uppercase;
-    color: $gray-color;
-    &:hover {
-        color: #d07c7c;
-        transition: 0.3s;
-        border-bottom: $darkred-2px-border;
-    }
-}
 
 .menu {
     height: 68px;
@@ -91,12 +66,21 @@ h1 {
     float: right;
     border-bottom: $darkred-2px-border;
     height: 50px;
+    .nav-item {
+        text-transform: uppercase;
+        color: $gray-color;
+        &:hover {
+            color: $light-pink-color;
+            transition: 0.3s;
+            border-bottom: $darkred-2px-border;
+        }
+    }
 }
 
 .lorem {
     margin-top: 4vh;
     width: 60vw;
-    margin: 5vh auto 10vh auto;
+    margin: $margin-5vh-auto-10vh-auto;
     text-align: center;
 }
 
@@ -107,26 +91,22 @@ h1 {
     position: relative;
 }
 
-
-
 .video-frame-content {
     width: $width-90;
     height: 500px;
 }
 
 .navbar {
-    background-color: black;
+    background-color: $black-color;
     height: 68px;
-}
-
-.nav1-left a {
-    color: #e6e6e8;
-    text-decoration: none;
-}
-
-.nav1-right a {
-    font-size: 1rem;
-    padding: 0.7rem 1rem;
+    .nav1-left a {
+        color: $cream-color;
+        text-decoration: none;
+    }
+    .nav1-right a {
+        font-size: 1rem;
+        padding: 0.7rem 1rem;
+    }
 }
 
 a:hover {
@@ -150,22 +130,21 @@ a:hover {
 
 .log-in,
 .eye {
-    background-color: #444857;
+    background-color: $gray-color;
     opacity: 0.8;
 }
 
 .sign-up {
-    color: black;
+    color: $black-color;
     &:hover {
-        background-color: #329445;
-    }
-    
+        background-color: $intense-green-color;
+    }    
 }
 
 .codepen {
     width: 45px;
     height: 45px;
-    color: #444857;
+    color: $gray-color;
     display: block;
     float: left;
     padding: 6px;
@@ -209,10 +188,7 @@ a:hover {
 }
 
 .eye {
-    border-radius: 10px;
-    display: inline-block;
-    margin: 0.3rem;
-    font-weight: bold;
+    @include menu-text-button;
 }
 
 .eye-img {
@@ -222,11 +198,7 @@ a:hover {
 
 .log-in,
 .sign-up {
-    margin: 3px;
-    border-radius: 10px;
-    padding: 15px 25px;
-    display: inline-block;
-    font-weight: bold;
+    @include menu-text-button;
 }
 
 .tech {
@@ -241,24 +213,12 @@ a:hover {
     }
 }
 
-
 .video-frame {
-    width: $width-90;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+    @include centered-item($width-90);
 }
 
 .formular {
-    padding: 3%;
-    font-family: "Lato";
-    text-align: center;
-    background-image: url("../../assets/form-b.jpg");
-    opacity: 0.7;
-    color: $white-color;
-    font-weight: bold;
-    margin: $margin-8-15-2-15;
-    height: 650px;
+    @include formular-regular("../../assets/form-b.jpg");
 }
 
 .form-container {
@@ -266,36 +226,15 @@ a:hover {
 }
 
 input {
-    width: $width-100;
-    height: 30px;
-    border: $darkblue-2px-border;
-    margin-bottom: $margin-regular;
-    color: black;
-    font-weight: bold;
-    font-size: 14px;
+    @include input-regular;
 }
 
 textarea {
-    border: $darkblue-2px-border;
-    width: $width-100;
-    height: 200px;
-    font-size: 14px;
+   @include textarea-regular;
 }
 
 .send {
-    width: 100px;
-    text-align: center;
-    display: block;
-    float: right;
-    background-color: $light-blue-color;
-    border: $blue-1px-border;
-    border-radius: 3px;
-    color: $white-color;
-    cursor: pointer;
-    text-transform: uppercase;
-    &:hover {
-        background-color: $blue-color;
-    }
+    @include red-button(100px);
 }
 
 .form-container p {
