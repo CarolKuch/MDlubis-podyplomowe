@@ -65,6 +65,21 @@ background: $after-underline-color;
     padding: 15px 25px;
     display: inline-block;
     font-weight: bold;
+    a{
+        font-size: 1rem;
+        padding: 0.7rem 1rem;        
+    }
+}
+
+@mixin small-button{
+    font-size: 0.7rem;
+    background-color: $gray-color;
+    border-radius: 10%;
+    padding: 1px 6px;
+    display: inline-block;
+    &:hover{
+        background-color: $ligth-green-color;
+    }
 }
 
 @mixin centered-item($centered-item-width){
@@ -72,4 +87,15 @@ background: $after-underline-color;
     margin-right: auto;
     text-align: center;
     width: $centered-item-width;
+}
+
+@mixin icon-standard($width, $height, $padding){
+    width: $width;
+    height: $height;
+    padding: $padding;
+}
+
+@mixin border-rounded($border-radius, $border-color){
+    border: 2px solid $border-color;
+    border-radius: $border-radius;
 }

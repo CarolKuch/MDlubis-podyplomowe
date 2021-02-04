@@ -57,7 +57,7 @@ body {
 .menu {
     height: 68px;
     position: relative;
-    padding-right: 90px;
+    padding-right: $padding-90;
     border-bottom: $darkred-2px-border;
 }
 
@@ -69,16 +69,17 @@ body {
     .nav-item {
         text-transform: uppercase;
         color: $gray-color;
-        &:hover {
-            color: $light-pink-color;
-            transition: 0.3s;
-            border-bottom: $darkred-2px-border;
-        }
+        
+    }
+    .nav-item:hover {
+        color: $light-pink-color;
+        transition: 0.3s;
+        border-bottom: $darkred-2px-border;
     }
 }
 
 .lorem {
-    margin-top: 4vh;
+    margin-top: $margin-5;
     width: $width-70;
     margin: $margin-5vh-auto-10vh-auto;
     text-align: center;
@@ -98,18 +99,11 @@ body {
     height: 68px;
     .nav1-left a {
         color: $cream-color;
-        text-decoration: none;
-    }
-    .nav1-right a {
-        font-size: 1rem;
-        padding: 0.7rem 1rem;
     }
 }
 
-a:hover {
+a:hover{
     text-decoration: none;
-    color: $cream-color;
-    transition: 0.1s ease;
 }
 
 .follow:hover,
@@ -117,34 +111,27 @@ a:hover {
     background-color: $ligth-green-color;
 }
 
-.marcin:hover,
-.projekt,
-.follow,
-.log-in,
-.eye {
-    color: $white-color;
-}
-
 .log-in,
 .eye {
     background-color: $gray-color;
+    color: $white-color;
     opacity: 0.8;
+    &:hover{
+        color: $cream-color;
+    }
 }
 
 .sign-up {
     color: $black-color;
     &:hover {
         background-color: $intense-green-color;
+        color: $white-color;        
     }    
 }
 
 .codepen {
-    width: 45px;
-    height: 45px;
-    color: $gray-color;
-    display: block;
+    @include icon-standard(45px, 45px, 6px);
     float: left;
-    padding: 6px;
 }
 
 .projekt {
@@ -152,36 +139,26 @@ a:hover {
     font-weight: bold;
 }
 
-.marcin,
-.follow,
-.projekt {
-    display: inline-block;
-}
 
 .marcin {
     font-size: 0.8rem;
 }
 
 .follow {
-    font-size: 0.7rem;
-    background-color: $gray-color;
-    border-radius: 10%;
-    padding: 1px 6px;
+    @include small-button;
 }
 
 .heart {
-    border-radius: 10px;
-    display: inline-block;
-    height: 47px;
-    background-color: black;
-    border: 2px solid $gray-color;
+    @include icon-standard(55px, 55px, 10px);
+    @include border-rounded(10px, $gray-color);
+    background-color: $black-color;   
     &:hover {
-        background-color: #5a6074;
+        background-color: $gray-color;
     }
 }
 
 .heart-img {
-    width: 25px;
+    @include icon-standard(25px, 25px, 0px);
 }
 
 .eye {
@@ -189,8 +166,8 @@ a:hover {
 }
 
 .eye-img {
-    width: 25px;
-    margin-right: 5px;
+    @include icon-standard(40px, 20px, 0px)
+    padding-right: 10px;
 }
 
 .log-in,
@@ -253,6 +230,7 @@ textarea {
     .nav1-left,
     .nav1-right {
         margin-top: -5px;
+        
     }
 }
 
