@@ -2,6 +2,8 @@
 @import "./utils/mixins.scss";
 @import "./base/typography.scss";
 @import "./base/layout.scss";
+@import "./base/mediaqueries.scss";
+
 @font-face {
     font-family: Roboto;
     src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
@@ -15,7 +17,7 @@
 
 body {
     margin: $margin-0;
-    padding: $margin-0;
+    padding: $padding-0;
     font-family: "Roboto";
 }
 
@@ -32,16 +34,16 @@ body {
     right: 0;
     left: 0;
     h6 {
-        line-height: 90px;
-        font-size: 1rem;
+        line-height: $line-height-large;
+        font-size: $font-size-m;
     }
 
     h5 {
-        font-size: 1.2rem;
+        font-size: $font-size-l;
     }
     
     h1 {
-        font-size: 2rem;
+        font-size: $font-size-xl;
     }
 }
 
@@ -62,10 +64,8 @@ body {
 }
 
 .nav2 {
-    display: block;
     float: right;
     border-bottom: $darkred-2px-border;
-    height: 50px;
     .nav-item {
         text-transform: uppercase;
         color: $gray-color;
@@ -90,8 +90,7 @@ body {
 }
 
 .video-frame-content {
-    width: $width-90;
-    height: 500px;
+    @include frame-template($width-90, 500px);
 }
 
 .navbar {
@@ -106,28 +105,17 @@ a:hover{
     text-decoration: none;
 }
 
-.follow:hover,
-.sign-up {
-    background-color: $ligth-green-color;
-}
-
 .log-in,
 .eye {
     background-color: $gray-color;
     color: $white-color;
-    opacity: 0.8;
+
     &:hover{
         color: $cream-color;
     }
 }
 
-.sign-up {
-    color: $black-color;
-    &:hover {
-        background-color: $intense-green-color;
-        color: $white-color;        
-    }    
-}
+
 
 .codepen {
     @include icon-standard(45px, 45px, 6px);
@@ -135,17 +123,19 @@ a:hover{
 }
 
 .projekt {
-    font-size: 1.2rem;
+    font-size: $font-size-l;
     font-weight: bold;
 }
 
-
 .marcin {
-    font-size: 0.8rem;
+    font-size: $font-size-s;
 }
 
 .follow {
     @include small-button;
+    &:hover{
+        background-color: $ligth-green-color;
+    }
 }
 
 .heart {
@@ -161,19 +151,21 @@ a:hover{
     @include icon-standard(25px, 25px, 0px);
 }
 
-.eye {
-    @include menu-text-button;
-}
-
-.eye-img {
-    @include icon-standard(40px, 20px, 0px)
-    padding-right: 10px;
-}
-
+.eye,
 .log-in,
 .sign-up {
     @include menu-text-button;
 }
+
+.sign-up {
+    @include sign-up-button;  
+}
+
+.eye-img {
+    @include icon-standard(40px, 20px, 0px);
+    padding-right: 10px;
+}
+
 
 .tech {
     @include centered-item($width-100);
@@ -212,116 +204,4 @@ textarea {
 .form-container p {
     text-align: left;
     width: $width-70;
-}
-
-@media (max-width: 850px) {
-    .navbar {
-        height: 60px;
-    }
-
-    .eye-text {
-        display: none;
-    }
-
-    .eye-img {
-        margin-right: 0px;
-    }
-
-    .nav1-left,
-    .nav1-right {
-        margin-top: -5px;
-        
-    }
-}
-
-@media (max-width: 750px) {
-    .eye {
-        display: none;
-    }
-}
-
-@media (max-width: 600px) {
-    .heart {
-        display: none;
-    }
-
-    .marcin,
-    .nav1-right a {
-        font-size: 0.8rem;
-    }
-
-    .nav1-right a {
-        padding: 8px;
-    }
-
-    .projekt {
-        font-size: 1rem;
-    }
-
-    .follow {
-        font-size: 0.6rem;
-    }
-}
-
-@media (max-width: 470px) {
-    .codepen {
-        display: none;
-    }
-}
-
-@media (max-width: 1000px) {
-    .main-img {
-        width: $width-100;
-        margin-top: $margin-0;
-    }
-
-    .headers {
-        top: 10rem;
-    }
-
-    .headers h1 {
-        margin-bottom: 0px;
-    }
-}
-
-@media (max-width: 810px) {
-    .headers {
-        top: 7rem;
-    }
-}
-
-@media (max-width: 700px) {
-    .computer-studies {
-        height: 90vh;
-    }
-
-    .main-img {
-        height: 90vh;
-        object-fit: cover;
-    }
-
-    .headers {
-        top: 50%;
-    }
-    .video-frame-content {
-        height: 300px;
-    }
-}
-
-@media (max-width: 550px) {
-    .video-frame-content {
-        height: 200px;
-    }
-}
-
-@media (max-width: 1200px) {
-    .form-container {
-        width: $width-90;
-    }
-}
-
-@media (max-width: 900px) {
-    .formu {
-        margin: $margin-8-15-2-15;
-    }
 }

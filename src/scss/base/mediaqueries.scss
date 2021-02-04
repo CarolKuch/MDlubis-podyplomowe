@@ -1,0 +1,97 @@
+
+
+@media (max-width: 1200px) {
+    .form-container {
+        width: $width-90;
+    }
+}
+
+@media (max-width: 1000px) {
+    .main-img {
+        width: $width-100;
+        margin-top: $margin-0;
+    }
+
+    .headers {
+        top: 10rem;
+    }
+
+    .headers h1 {
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        height: 60px;
+    }
+
+    .eye-text {
+        display: none;
+    }
+
+    .nav1-left,
+    .nav1-right {
+        margin-top: -5px;
+        
+    }
+}
+
+@media (max-width: 810px) {
+    .headers {
+        top: 7rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .computer-studies {
+        height: 90vh;
+    }
+
+    .main-img {
+        height: 90vh;
+        object-fit: cover;
+    }
+
+    .headers {
+        top: 50%;
+    }
+    .video-frame-content {
+        height: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    .heart {
+        display: none;
+    }
+
+    .marcin,
+    .nav1-right a {
+        font-size: 0.8rem;
+    }
+
+    .nav1-right a {
+        padding: 8px;
+    }
+
+    .projekt {
+        font-size: 1rem;
+    }
+
+    .follow {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .video-frame-content {
+        height: 200px;
+    }
+}
+
+@media (max-width: 470px) {
+    .codepen {
+        display: none;
+    }
+}

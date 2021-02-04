@@ -5,14 +5,14 @@
     position: relative;
 }
 @mixin after-underline($after-underline-color){
-content: "";
-position: absolute;
-display: block;
-width: 72px;
-height: 3px;
-left: -webkit-calc(50% - 36px);
-left: calc(50% - 36px);
-background: $after-underline-color;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 72px;
+    height: 3px;
+    left: -webkit-calc(50% - 36px);
+    left: calc(50% - 36px);
+    background: $after-underline-color;
 }
 
 @mixin formular-regular($background-image-url){
@@ -65,10 +65,24 @@ background: $after-underline-color;
     padding: 15px 25px;
     display: inline-block;
     font-weight: bold;
+    background-color: $gray-color;
+    color: $white-color;
+    &:hover{
+        color: $cream-color;
+    }
     a{
         font-size: 1rem;
         padding: 0.7rem 1rem;        
     }
+}
+
+@mixin sign-up-button{
+    color: $black-color;
+    background-color: $ligth-green-color;
+    &:hover {
+        background-color: $intense-green-color;
+        color: $white-color;        
+    }  
 }
 
 @mixin small-button{
@@ -98,4 +112,9 @@ background: $after-underline-color;
 @mixin border-rounded($border-radius, $border-color){
     border: 2px solid $border-color;
     border-radius: $border-radius;
+}
+
+@mixin frame-template($frame-width, $frame-height){
+    width: $frame-width;
+    height: $frame-height;
 }
